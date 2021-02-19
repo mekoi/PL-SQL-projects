@@ -1,0 +1,16 @@
+Answer Questions Assignment 5-10, 5-11, 5-12 and 5-13 from Chapter 5 of Oracle 11g: PL/SQL Programming.
+Due October, 28 2019 at 16:30.
+
+-----------------------------------------------------------------
+
+Assignment 5-10:
+Returning a Record Create a procedure named DDPROJ_SP that retrieves project information for a specific project based on a project ID. The procedure should have two parameters: one to accept a project ID value and another to return all data for the specified project. Use a record variable to have the procedure return all database column values for the selected project. Test the procedure with an anonymous block.
+
+Assignment 5-11:
+Creating a Procedure Create aprocedurenamed DDPAY_SPthatidentifieswhetheradonorcurrentlyhas anactivepledge with monthly payments. A donor ID is the input to the procedure. Using the donor ID, the procedure needs to determine whether the donor has any currently active pledges based on the status field and is on a monthly payment plan. If so, the procedure is to return the Boolean value TRUE. Otherwise, the value FALSE should be returned. Test the procedure with an anonymous block.
+
+Assignment 5-12:
+Creating a Procedure Create a procedure named DDCKPAY_SP that confirms whether a monthly pledge payment is the correct amount. The procedure needs to accept two values as input: a payment amount and a pledge ID. Based on these inputs, the procedure should confirm that the payment is the correct monthly increment amount, based on pledge data in the database. If it isn’t, a custom Oracle error using error number 20050 and the message “Incorrect payment amount - planned payment = ??” should be raised. The ?? should be replaced by the correct payment amount. The database query in the procedure should be formulated so that no rows are returned if the pledge isn’t on a monthly payment planorthe pledge isn’t found.Ifthe query returns no rows,the procedure should display the message “No payment information.” Test the procedure with the pledge ID 104 and the payment amount $25. Then test with the same pledge ID but the payment amount $20. Finally, test the procedure with a pledge ID for a pledge that doesn’t have monthly payments associated with it.
+
+Assignment 5-13: 
+Creating a Procedure Create a procedure named DDCKBAL_SP that verifies pledge payment information. The procedure should accept a pledge ID as input and return three values for the specified pledge: pledge amount, payment total to date, and remaining balance. Test the procedure with an anonymous block.
